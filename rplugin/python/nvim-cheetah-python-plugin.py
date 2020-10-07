@@ -64,15 +64,15 @@ class CheetahPlugin(object):
                 extension = name.split(".")[-1]
                 filetype  = extension
 
-            tmpl = ("$HOME/.vim/cheetah/tmpl/{}/{}.cheetah"
+            tmpl = ("$HOME/.config/nvim/cheetah/tmpl/{}/{}.cheetah"
                     .format(filetype, args[0].lower()))
 
             if name.split("/")[-1] == "Dockerfile":
-                tmpl = ("$HOME/.vim/cheetah/tmpl/{}/{}.cheetah"
+                tmpl = ("$HOME/.config/nvim/cheetah/tmpl/{}/{}.cheetah"
                     .format("dockerfile", "Dockerfile"))
 
             if name.split("/")[-1] == "Makefile":
-                tmpl = ("$HOME/.vim/cheetah/tmpl/{}/{}.cheetah"
+                tmpl = ("$HOME/.config/nvim/cheetah/tmpl/{}/{}.cheetah"
                     .format("mk", args[0].lower()))
 
             self.load_cheetah_tmpl(name, range, args, tmpl)
