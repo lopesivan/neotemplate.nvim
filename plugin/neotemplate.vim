@@ -29,7 +29,7 @@ function! s:split_filetypes(filetype) abort
 endfunction
 
 function! s:get_enabled_templates(filetype) abort
-    return systemlist("find /home/ivan/.vim/cheetah/tmpl/".a:filetype."/ -name \*.cheetah -printf '%P\n'| sed 's/\.cheetah$//'")
+    return systemlist("find ~/.config/nvim/cheetah/tmpl/".a:filetype."/ -name \*.cheetah -printf '%P\n'| sed 's/\.cheetah$//'")
 endfunction
 
 function! CompleteTemplates(ArgLead, CmdLine, CursorPos) abort
