@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/7492b90/
+CheetahPlugin	rplugin/python/nvim-cheetah-python-plugin.py	/^class CheetahPlugin(object):$/;"	c
+CompleteTemplates	plugin/neotemplate.vim	/^function! CompleteTemplates(ArgLead, CmdLine, CursorPos) abort$/;"	f
+__init__	rplugin/python/nvim-cheetah-python-plugin.py	/^    def __init__(self, nvim):$/;"	m	class:CheetahPlugin
+g:loaded_neotemplate	plugin/neotemplate.vim	/^let g:loaded_neotemplate = "v01"$/;"	v
+get_line	rplugin/python/nvim-cheetah-python-plugin.py	/^    def get_line(self, file):$/;"	m	class:CheetahPlugin
+load_cheetah_tmpl	rplugin/python/nvim-cheetah-python-plugin.py	/^    def load_cheetah_tmpl(self, name, range, args, tmpl):$/;"	m	class:CheetahPlugin
+neotemplate	README.md	/^# neotemplate$/;"	c
+neotemplate	rplugin/python/nvim-cheetah-python-plugin.py	/^    def neotemplate(self, args, range):$/;"	m	class:CheetahPlugin
+s:get_enabled_templates	plugin/neotemplate.vim	/^function! s:get_enabled_templates(filetype) abort$/;"	f
+s:keepcpo	plugin/neotemplate.vim	/^let s:keepcpo     = &cpo$/;"	v
+s:split_filetypes	plugin/neotemplate.vim	/^function! s:split_filetypes(filetype) abort$/;"	f
