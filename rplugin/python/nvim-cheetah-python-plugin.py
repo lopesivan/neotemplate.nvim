@@ -1,7 +1,7 @@
 import sys
 import os
 import glob
-import StringIO
+import io
 from Cheetah.Template import Template
 
 import neovim
@@ -31,7 +31,7 @@ class CheetahPlugin(object):
                 dataout = Template(open(view).read(), searchList=[{'name': name,
                                                                    'data': args}])
                 r = self.nvim.current.buffer.range(int(range[0]), int(range[1]))
-                redirected = StringIO.StringIO()
+                redirected = io.StringIO()
                 sys.stdout = redirected
                 print(dataout)
                 sys.stdout = sys.__stdout__
@@ -43,7 +43,7 @@ class CheetahPlugin(object):
             dataout = Template(open(view).read(), searchList=[{'name': name,
                                                                'data': args}])
             r = self.nvim.current.buffer.range(int(range[0]), int(range[1]))
-            redirected = StringIO.StringIO()
+            redirected = io.StringIO()
             sys.stdout = redirected
             print(dataout)
             sys.stdout = sys.__stdout__
